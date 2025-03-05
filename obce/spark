@@ -1,4 +1,8 @@
-#!/usr/bin/env php
+$logger = \Config\Services::logger();
+$logger->pushHandler(new \CodeIgniter\Log\Handlers\FileHandler());
+$logger->setLevel('debug');$logger = \Config\Services::logger();
+$logger->pushHandler(new \CodeIgniter\Log\Handlers\FileHandler());
+$logger->setLevel('debug');#!/usr/bin/env php
 <?php
 
 /**
